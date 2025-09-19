@@ -76,7 +76,7 @@ export default function Form() {
         <input
           name="phone"
           required
-          placeholder="Phone"
+          type="tel"
           onChange={handleChange}
           className="w-full border-b border-gray-300 py-3 focus:outline-none"
         />
