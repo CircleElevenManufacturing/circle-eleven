@@ -1,7 +1,6 @@
-import { google } from "googleapis";
 import { NextResponse } from "next/server";
 
-type FormData = {
+type FormDataType = {
   first: string;
   last: string;
   phone: string;
@@ -12,42 +11,14 @@ type FormData = {
   attachments: File[];
 };
 
-async function uploadToDrive(files: any) {
-  const auth = new google.auth.GoogleAuth({
-    credentials: {
-      client_email: process.env.GOOGLE_CLIENT_EMAIL,
-      private_key: process.env.GOOGLE_PRIVATE_KEY.replace(/\\n/g, "\n"),
-    },
-    scopes: ["https://www.googleapis.com/auth/drive.file"],
-  });
-
-  const drive = google.drive({ version: "v3", auth });
-
-  for (const file of files) {
-    const arrayBuffer = await file.arrayBuffer();
-    const buffer = Buffer.from(arrayBuffer);
-
-    await drive.files.create({
-      requestBody: {
-        name: file.name,
-        parents: [process.env.GOOGLE_DRIVE_FOLDER as string],
-      },
-      media: {
-        mimeType: file.type,
-        body: buffer,
-      },
-    });
-  }
-}
-
-async function sendEmail(payload: FormData) {
+async function sendEmail(payload: FormDataType) {
   const nodemailer = require("nodemailer");
 
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-      user: process.env.EMAIL_USER,
-      pass: process.env.EMAIL_PASS,
+      user: process.env.EMAIL_USER!,
+      pass: process.env.EMAIL_PASS!, // App password if using Gmail
     },
   });
 
@@ -55,17 +26,26 @@ async function sendEmail(payload: FormData) {
 Name: ${payload.first} ${payload.last}
 Phone: ${payload.phone}
 Email: ${payload.email}
-Lead Time: ${payload?.leadTime || "N/A"}
+Lead Time: ${payload.leadTime || "N/A"}
 
 Message:
-${payload?.message || "N/A"}
-  `;
+${payload.message || "N/A"}
+`;
+
+  const attachments = await Promise.all(
+    payload.attachments.map(async (file) => ({
+      filename: file.name,
+      content: Buffer.from(await file.arrayBuffer()),
+      contentType: file.type,
+    }))
+  );
 
   await transporter.sendMail({
     from: `"Contact Form" <${process.env.EMAIL_USER}>`,
-    to: process.env.EMAIL_TO,
-    subject: "New Contact Form Submission",
+    to: process.env.EMAIL_TO!,
+    subject: payload.subject,
     text,
+    attachments: attachments.length > 0 ? attachments : undefined,
   });
 }
 
@@ -73,23 +53,22 @@ export async function POST(req: Request) {
   try {
     const formData = await req.formData();
 
-    const data: FormData = {
+    const data: FormDataType = {
       first: formData.get("first")?.toString() || "",
       last: formData.get("last")?.toString() || "",
       phone: formData.get("phone")?.toString() || "",
       email: formData.get("email")?.toString() || "",
+      subject: formData.get("subject")?.toString() || "",
       leadTime: formData.get("leadTime")?.toString() || "",
       message: formData.get("message")?.toString() || "",
-      subject: formData.get("subject")?.toString() || "",
       attachments: (formData.getAll("attachments") as File[]) || [],
     };
 
-    if (data?.attachments?.length > 0) await uploadToDrive(data.attachments);
     await sendEmail(data);
 
     return NextResponse.json({ success: true });
-  } catch (err) {
+  } catch (err: any) {
     console.error("Contact form submission error:", err);
-    return NextResponse.json({ success: false, error: err }, { status: 500 });
+    return NextResponse.json({ success: false, error: err.message || err }, { status: 500 });
   }
 }

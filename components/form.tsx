@@ -46,7 +46,7 @@ export default function Form() {
       }
     }
     try {
-      await fetch("/api/contact", { method: "POST", body: data });
+      await fetch("/api/upload", { method: "POST", body: data });
       alert("Submitted!");
     } catch (error) {
       alert("Unable to submit" + error);
