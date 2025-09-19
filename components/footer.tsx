@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="md:flex justify-between gap-36">
           <div>
             <p>123 Demo Street</p>
-            <p>St. Charles, Illinios</p>
+            <p>St. Charles, IL</p>
           </div>
 
           <div className="mt-5 md:mt-0">

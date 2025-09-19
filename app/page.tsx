@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <section>
       {/* HEADER */}
-      <h1 className="font-normal px-5 md:px-16 xl:pl-44 text-4xl md:text-5xl lg:text-6xl mt-16 mb-28 sm:max-w-2xl md:max-w-6xl max-w-full leading-12 lg:leading-16">
+      <h1 className="px-5 md:px-16 xl:pl-44 text-4xl md:text-5xl lg:text-6xl mt-16 mb-28 sm:max-w-2xl md:max-w-6xl max-w-full leading-12 lg:leading-16">
         Circle Eleven Manufacturing is a precision machining company based in St. Charles, Illinois.
       </h1>
       <Image src="/drill.png" alt="drill" width={200} height={65} style={{ width: "100%" }} />
@@ -26,7 +26,7 @@ export default function Home() {
           {[1, 2, 3, 4].map((item) => (
             <div className="mb-10 md:mb-0" key={item}>
               <div className="h-96 w-full bg-neutral-500" />
-              <h3 className="text-2xl mt-3 font-acumin">Project {item}</h3>
+              <h3 className="text-2xl md:text-3xl mt-3 font-acumin">Project {item}</h3>
             </div>
           ))}
         </div>
