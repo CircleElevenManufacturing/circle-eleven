@@ -24,7 +24,7 @@ export default function Home() {
 
         <div className="md:grid md:grid-cols-2 mt-48 gap-10">
           {[1, 2, 3, 4].map((item) => (
-            <div className="mb-10 md:mb-0">
+            <div className="mb-10 md:mb-0" key={item}>
               <div className="h-96 w-full bg-neutral-500" />
               <h3 className="text-2xl mt-3 font-acumin">Project {item}</h3>
             </div>
