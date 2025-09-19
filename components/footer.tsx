@@ -6,13 +6,13 @@ export default function Footer() {
       <Image src="/logo.png" alt="logo" width={70} height={70} className="mb-8" />
 
       <div className="flex justify-between text-neutral-600">
-        <div className="flex justify-between gap-36">
+        <div className="md:flex justify-between gap-36">
           <div>
             <p>123 Demo Street</p>
             <p>St. Charles, Illinios</p>
           </div>
 
-          <div>
+          <div className="mt-5 md:mt-0">
             <p>(555) 555-5555</p>
             <p>circleelevenmanufacturing@gmail.com</p>
           </div>

@@ -18,7 +18,7 @@ export default function Header() {
 
   return (
     <header className="top-0 left-0 w-full bg-white/80 z-50 text-neutral-600">
-      <div className="xl:px-24 px-10 md:px-16 py-6 flex justify-between items-center">
+      <div className="xl:px-24 px-5 md:px-16 py-6 flex justify-between items-center">
         <Image src="/logo.png" className="cursor-pointer" alt="logo" width={60} height={60} onClick={() => router.replace("/")} />
 
         {/* Desktop Nav */}
