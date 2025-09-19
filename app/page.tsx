@@ -1,6 +1,15 @@
 import LetsWorkTogether from "@/components/lets-work-together";
 import Image from "next/image";
 
+// CHANGE FONTS
+// FAVICON
+// EMAIL TEMPLATE
+// MOBILE RESPONSIVNESS
+// COPIES
+// IMAGES
+// EDGE HANDLING FOR FORM
+// PHONE NUMBER FORMAT
+
 export default function Home() {
   return (
     <section>
