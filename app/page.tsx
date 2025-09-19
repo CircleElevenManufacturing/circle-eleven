@@ -26,7 +26,7 @@ export default function Home() {
           {[1, 2, 3, 4].map((item) => (
             <div className="mb-10 md:mb-0">
               <div className="h-96 w-full bg-neutral-500" />
-              <h3 className="text-3xl mt-3 font-poppins font-normal">Project {item}</h3>
+              <h3 className="text-2xl mt-3 font-acumin">Project {item}</h3>
             </div>
           ))}
         </div>
