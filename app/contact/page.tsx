@@ -2,7 +2,7 @@ import Form from "@/components/form";
 
 export default function Contact() {
   return (
-    <section className="mt-28 mb-16 lg:grid grid-cols-2 gap-36 px-16 lg:px-36">
+    <section className="mt-28 mb-16 lg:grid grid-cols-2 gap-36 px-8 lg:px-36">
       <div>
         <h1 className="text-5xl mb-10">Let’s Work Together</h1>
         <p className="mb-20">Please provide some information on your project or goals and we’ll move the conversation on from there.</p>
