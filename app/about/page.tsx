@@ -3,8 +3,8 @@ import LetsWorkTogether from "@/components/lets-work-together";
 export default function About() {
   return (
     <section className="mt-28">
-      <div className="grid grid-cols-5 px-56 mb-96">
-        <h1 className="text-5xl col-span-2">About</h1>
+      <div className="md:grid grid-cols-5 px-16 lg:px-56 mb-96">
+        <h1 className="text-5xl col-span-2 lg:mb-0 mb-10">About</h1>
 
         <div className="space-y-5 col-span-3 text-neutral-700">
           <p>

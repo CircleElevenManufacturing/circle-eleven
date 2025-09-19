@@ -6,3 +6,41 @@ textarea {
   background-color: #fafafa;
   border: 1px solid #a9a9a9;
 }
+
+@font-face {
+  font-family: "acumin-regular";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("/public/fonts/acumin-regular.woff") format("woff2");
+}
+
+@font-face {
+  font-family: "poppins";
+  src: url("/public/fonts/poppins-regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "poppins";
+  src: url("/fonts/poppins-semibold.ttf") format("truetype");
+  font-weight: 600; /* semibold */
+  font-style: normal;
+}
+
+@theme {
+  --font-acumin: "acumin-regular", sans-serif;
+  --font-poppins: "poppins", sans-serif;
+}
+
+h1,
+h2 {
+  @apply font-acumin;
+}
+
+p,
+a {
+  @apply font-poppins;
+}

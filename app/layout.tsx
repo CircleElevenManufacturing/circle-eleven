@@ -4,7 +4,7 @@ import Footer from "@/components/footer";
 
 export const metadata = {
   title: "Circle Eleven Manufacturing",
-  description: "Ukrainian and Polish owned",
+  description: "Ukrainian and Polish owned manufacturing",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

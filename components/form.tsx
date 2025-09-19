@@ -55,30 +55,32 @@ export default function Form() {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-6">
-      <div className="grid grid-cols-2 gap-6">
+      <div className="md:grid grid-cols-2 gap-6">
         <input
           name="first"
           required
           placeholder="First Name"
           onChange={handleChange}
-          className="border-b border-gray-300 py-3 focus:outline-none"
+          className="border-b border-gray-300 py-3 focus:outline-none w-full mb-6 md:mb-0"
         />
+
         <input
           name="last"
           required
           placeholder="Last Name"
           onChange={handleChange}
-          className="border-b border-gray-300 py-3 focus:outline-none"
+          className="border-b border-gray-300 py-3 focus:outline-none w-full"
         />
       </div>
 
-      <div className="grid grid-cols-2 gap-6">
+      <div className="md:grid grid-cols-2 gap-6">
         <input
           name="phone"
           required
+          placeholder="Phone"
           type="tel"
           onChange={handleChange}
-          className="w-full border-b border-gray-300 py-3 focus:outline-none"
+          className="w-full border-b border-gray-300 py-3 focus:outline-none mb-6 md:mb-0"
         />
 
         <input
