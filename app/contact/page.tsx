@@ -4,7 +4,7 @@ export default function Contact() {
   return (
     <section className="mt-28 mb-16 lg:grid grid-cols-2 gap-36 px-5 lg:px-36">
       <div>
-        <h1 className="text-5xl mb-10">Let’s Work Together</h1>
+        <h1 className="text-5xl mb-10">Request a Quote</h1>
         <p className="mb-20">Please provide some information on your project or goals and we’ll move the conversation on from there.</p>
 
         <hr className="w-3/5 mb-16" />
