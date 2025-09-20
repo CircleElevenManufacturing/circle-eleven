@@ -8,14 +8,14 @@ export default function Home() {
   return (
     <section>
       {/* HEADER */}
-      <h1 className="px-5 md:px-16 xl:pl-44 text-4xl md:text-5xl lg:text-6xl mt-16 mb-28 sm:max-w-2xl md:max-w-6xl max-w-full leading-12 lg:leading-16">
-        We are a precision machining company based in St. Charles, Illinois.
+      <h1 className="font-semibold px-5 md:px-16 xl:pl-44 text-4xl md:text-5xl lg:text-6xl mt-16 mb-28 sm:max-w-2xl md:max-w-6xl max-w-full leading-12 lg:leading-16">
+        We are a precision machining company based in St. Charles, IL.
       </h1>
       <Image src="/drill.png" alt="drill" width={200} height={65} style={{ width: "100%" }} />
 
       {/* RECENT WORK */}
       <div className="px-5 md:px-16 py-20">
-        <h1 className="text-2xl md:text-3xl lg:text-4xl mb-8 pl-0 md:pl-16 xl:pl-32">What We Do</h1>
+        <h1 className="font-semibold text-2xl md:text-3xl lg:text-4xl mb-6 pl-0 md:pl-16 xl:pl-32">What We Do</h1>
         <p className="max-w-3xl leading-8 pl-0 md:pl-16 xl:pl-32 text-lg">
           Our practice spans from environmental retrofits of existing buildings to the complete planning and design of new neighborhoods and
           public spaces. While our work is aesthetically diverse, our projects are linked by a focus on enhancing human relationships
