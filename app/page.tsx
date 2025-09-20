@@ -9,7 +9,7 @@ export default function Home() {
     <section>
       {/* HEADER */}
       <h1 className="font-semibold px-5 md:px-16 xl:pl-44 text-4xl md:text-5xl lg:text-6xl mt-16 mb-28 sm:max-w-2xl md:max-w-6xl max-w-full leading-12 lg:leading-16">
-        We are a precision machining company based in St. Charles, IL.
+        Precision machining company based in St. Charles, IL.
       </h1>
       <Image src="/drill.png" alt="drill" width={200} height={65} style={{ width: "100%" }} />
 
