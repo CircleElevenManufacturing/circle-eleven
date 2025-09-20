@@ -15,7 +15,7 @@ export default function Home() {
 
       {/* RECENT WORK */}
       <div className="px-5 md:px-16 py-20">
-        <h1 className="text-2xl md:text-3xl lg:text-4xl mb-8 pl-0 md:pl-16 xl:pl-32">Recent Work</h1>
+        <h1 className="text-2xl md:text-3xl lg:text-4xl mb-8 pl-0 md:pl-16 xl:pl-32">What We Do</h1>
         <p className="max-w-3xl leading-8 pl-0 md:pl-16 xl:pl-32 text-lg">
           Our practice spans from environmental retrofits of existing buildings to the complete planning and design of new neighborhoods and
           public spaces. While our work is aesthetically diverse, our projects are linked by a focus on enhancing human relationships
