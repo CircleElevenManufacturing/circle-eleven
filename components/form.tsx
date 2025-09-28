@@ -112,7 +112,7 @@ export default function Form() {
 
       <input
         name="leadTime"
-        placeholder="Lead Time"
+        placeholder="Estimated lead time (e.g., 2-4 weeks)"
         onChange={handleChange}
         className="w-full border-b border-gray-300 py-3 focus:outline-none"
       />
