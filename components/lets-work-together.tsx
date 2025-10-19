@@ -12,8 +12,8 @@ export default function LetsWorkTogether({ image, hideDescription }: Props) {
 
       {!hideDescription && (
         <p className="max-w-3xl mb-24 text-md md:text-lg">
-          We’re always looking for new opportunities and are comfortable working internationally. Please get in touch and one of our project
-          managers will contact you about beginning the proposal process.
+          We love taking on new projects. Reach out, and one of us will personally get back to you to talk through your machining needs and
+          next steps.
         </p>
       )}
 
