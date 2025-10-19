@@ -4,8 +4,8 @@ export default function Home() {
   return (
     <section>
       {/* HEADER */}
-      <h1 className="font-semibold px-5 md:px-16 xl:pl-44 text-4xl md:text-5xl lg:text-6xl mt-16 mb-28 sm:max-w-2xl md:max-w-6xl max-w-full leading-12 lg:leading-16">
-        Precision machining company based in St. Charles, IL.
+      <h1 className="font-semibold px-5 md:px-16 xl:pl-24 text-4xl md:text-5xl lg:text-6xl mt-16 mb-20 sm:max-w-2xl md:max-w-6xl max-w-full leading-12 lg:leading-18">
+        Circle Eleven is a precision machining company based in St. Charles, IL
       </h1>
 
       <img src="/cnc-prop.jpg" alt="cnc machine" className="w-full object-cover h-[30rem] lg:h-[64rem]" />
