@@ -11,7 +11,8 @@ export default function Home() {
       <h1 className="font-semibold px-5 md:px-16 xl:pl-44 text-4xl md:text-5xl lg:text-6xl mt-16 mb-28 sm:max-w-2xl md:max-w-6xl max-w-full leading-12 lg:leading-16">
         Precision machining company based in St. Charles, IL.
       </h1>
-      <Image src="/drill.png" alt="drill" width={200} height={65} style={{ width: "100%" }} />
+
+      <Image src="/cnc-prop.jpg" alt="drill" width={3840} height={65} style={{ width: "100%" }} />
 
       {/* RECENT WORK */}
       <div className="px-5 md:px-16 py-20">

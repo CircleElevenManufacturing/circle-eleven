@@ -27,7 +27,7 @@ export default function Header() {
             <Link
               key={item.href}
               href={item.href}
-              className={`hover:opacity-60 ${pathname === item.href ? "underline underline-offset-10" : ""}`}
+              className={`hover:opacity-60 ${pathname === item.href ? "underline underline-offset-10 font-bold" : ""}`}
             >
               {item.label}
             </Link>
