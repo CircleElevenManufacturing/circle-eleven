@@ -14,9 +14,8 @@ export default function Home() {
       <div className="px-5 md:px-16 py-20">
         <h1 className="font-semibold text-2xl md:text-3xl lg:text-4xl mb-6 pl-0 md:pl-16 xl:pl-32">What We Do</h1>
         <p className="max-w-3xl leading-8 pl-0 md:pl-16 xl:pl-32 text-lg">
-          Our practice spans from environmental retrofits of existing buildings to the complete planning and design of new neighborhoods and
-          public spaces. While our work is aesthetically diverse, our projects are linked by a focus on enhancing human relationships
-          through architecture.
+          We provide precision CNC machining services for custom parts and prototypes. From one-off components to small production runs, we
+          deliver reliable, high-quality work built to exact specifications — proudly made in the USA.
         </p>
 
         <div className="md:grid md:grid-cols-2 mt-48 gap-10">
