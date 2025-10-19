@@ -1,8 +1,4 @@
 import LetsWorkTogether from "@/components/lets-work-together";
-import Image from "next/image";
-
-// COPIES
-// IMAGES
 
 export default function Home() {
   return (
@@ -12,7 +8,7 @@ export default function Home() {
         Precision machining company based in St. Charles, IL.
       </h1>
 
-      <Image src="/cnc-prop.jpg" alt="drill" width={3840} height={65} style={{ width: "100%" }} />
+      <img src="/cnc-prop.jpg" alt="cnc machine" className="w-full object-cover h-[30rem] lg:h-[64rem]" />
 
       {/* RECENT WORK */}
       <div className="px-5 md:px-16 py-20">

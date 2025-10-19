@@ -17,7 +17,7 @@ export default function LetsWorkTogether({ image, hideDescription }: Props) {
         </p>
       )}
 
-      <Link className="bg-white py-6 px-16 text-lg text-black" href="/contact">
+      <Link className="bg-white py-6 px-16 text-lg text-black whitespace-nowrap" href="/contact">
         Contact Us
       </Link>
     </div>
