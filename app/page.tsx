@@ -12,8 +12,8 @@ export default function Home() {
 
       {/* RECENT WORK */}
       <div className="px-5 md:px-16 py-20">
-        <h1 className="font-semibold text-2xl md:text-3xl lg:text-4xl mb-6 pl-0 md:pl-16 xl:pl-32">What We Do</h1>
-        <p className="max-w-3xl leading-8 pl-0 md:pl-16 xl:pl-32 text-lg">
+        <h1 className="font-semibold text-2xl md:text-3xl lg:text-4xl mb-6 pl-0 md:pl-16 xl:pl-24">What We Do</h1>
+        <p className="max-w-4xl leading-8 pl-0 md:pl-16 xl:pl-24 text-xl">
           We provide precision CNC machining services for custom parts and prototypes. From one-off components to small production runs, we
           deliver reliable, high-quality work built to exact specifications — proudly made in the USA.
         </p>
