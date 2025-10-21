@@ -1,6 +1,25 @@
 import LetsWorkTogether from "@/components/lets-work-together";
 
 export default function Home() {
+  const items = [
+    {
+      label: "Metal Cards",
+      image: "/metal-card.jpg",
+    },
+    {
+      label: "Hobby / DIY Components",
+      image: "/cookie-cutter.jpg",
+    },
+    {
+      label: "Small Metal Parts",
+      image: "/metal-parts.jpg",
+    },
+    {
+      label: "Fittings",
+      image: "/fitting-1.jpg",
+    },
+  ];
+
   return (
     <section>
       {/* HEADER */}
@@ -18,11 +37,12 @@ export default function Home() {
           deliver reliable, high-quality work built to exact specifications — proudly made in the USA.
         </p>
 
+        {/* WORK SHOWCASE */}
         <div className="md:grid md:grid-cols-2 mt-48 gap-10">
-          {[1, 2, 3, 4].map((item) => (
-            <div className="mb-10 md:mb-0" key={item}>
-              <div className="h-96 w-full bg-neutral-500" />
-              <h3 className="text-2xl md:text-3xl mt-3 font-acumin">Project {item}</h3>
+          {items.map((item) => (
+            <div className="mb-10 md:mb-0" key={item.label}>
+              <img className="h-96 w-full bg-neutral-500 object-cover object-center" src={item.image} />
+              <h3 className="text-xl md:text-2xl mt-3 font-acumin">{item.label}</h3>
             </div>
           ))}
         </div>
