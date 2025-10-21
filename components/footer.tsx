@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="flex justify-between text-neutral-600">
         <div className="md:flex justify-between gap-36">
           <div>
-            <p>123 Demo Street</p>
+            <p>1020 Cedar Ave. Suite 125F</p>
             <p>St. Charles, IL</p>
           </div>
 

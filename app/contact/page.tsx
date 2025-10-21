@@ -12,7 +12,7 @@ export default function Contact() {
         <hr className="w-3/5 mb-16" />
 
         <div className="hidden lg:block">
-          <p>123 Demo Street</p>
+          <p>1020 Cedar Ave. Suite 125F</p>
           <p className="mb-6">St. Charles, IL</p>
           <p>(555) 555-5555</p>
           <p>circleelevenmanufacturing@gmail.com</p>
