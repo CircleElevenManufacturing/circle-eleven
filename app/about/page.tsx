@@ -8,26 +8,25 @@ export default function About() {
 
         <div className="space-y-5 col-span-3 text-neutral-700">
           <p>
-            We think of architecture not as a single practice, but as several interlocking ones. Landscapes are inseparable from structures,
-            ecology is inseparable from building requirements, and improving human relationships is the ultimate goal of any project.
-            Aesthetic movements come and go, but we have found these principles to be timeless.
+            We don’t see machining as just cutting metal — we see it as building something real. Every project, whether it’s a prototype, a
+            small production run, or a one-off part, is a chance to turn an idea into something solid that works exactly as it should.
           </p>
 
           <p>
-            As partners, we strive for honesty and clarity. Our first job is to understand the client’s vision and needs, not to present our
-            own. We value timeliness, direct communication and prototypes over presentations, as well as the occasional face-to-face meeting
-            over a drink or a meal.
+            We’ve been in the manufacturing world since 2017, working in all kinds of shops — from job shops to precision mold and die work,
+            and later tool rooms focused on repair and R&D. Along the way, we learned what matters most: attention to detail, pride in the
+            craft, and doing things right the first time.
           </p>
 
           <p>
-            Over the years, we have been fortunate to collaborate with some excellent clients on some wonderful projects, but we believe it
-            is still too early to weigh in on the success of the work. A building exists in time and its usefulness is directly related to
-            how well it continues to perform.
+            We started this business to create a shop built around those same values — honesty, precision, and reliability. We believe in
+            keeping things simple: clear communication, quick turnarounds, and consistent quality.
           </p>
 
           <p>
-            We are proud of our Danish home and heritage, but do not consider ourselves exponents of Danish design. National style has no
-            place in architecture, where a building must first and foremost be suited to local needs.
+            We specialize in metal business cards, small metal parts (up to 4” x 4” x 4”), hobby and DIY components, prototypes, small-lot
+            manufacturing under 100 pieces, and one-off custom jobs. At the end of the day, we just love what we do — making things that
+            last, for people who care about the details.
           </p>
         </div>
       </div>
