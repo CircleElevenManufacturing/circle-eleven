@@ -8,7 +8,7 @@ export default function Home() {
     },
     {
       label: "Hobby / DIY Components",
-      image: "/cookie-cutter.jpg",
+      image: "/3d-printer.jpg",
     },
     {
       label: "Small Metal Parts",
