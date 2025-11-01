@@ -8,8 +8,8 @@ export default function About() {
 
         <div className="space-y-5 col-span-3 text-neutral-700">
           <p>
-            We don’t see machining as just cutting metal — we see it as building something real. Every project, whether it’s a prototype, a
-            small production run, or a one-off part, is a chance to turn an idea into something solid that works exactly as it should.
+            Every project, whether it’s a prototype, a small production run, or a one-off part, is a chance to turn an idea into something
+            solid that works exactly as it should.
           </p>
 
           <p>
@@ -25,8 +25,7 @@ export default function About() {
 
           <p>
             We specialize in metal business cards, small metal parts (up to 4” x 4” x 4”), hobby and DIY components, prototypes, small-lot
-            manufacturing under 100 pieces, and one-off custom jobs. At the end of the day, we just love what we do — making things that
-            last, for people who care about the details.
+            manufacturing under 100 pieces, and one-off custom jobs.
           </p>
         </div>
       </div>
